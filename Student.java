@@ -3,16 +3,16 @@ public class Student
     private String ID;
     private int choice;
     
-    public Student(Stirng in)
+    public Student(String in)
     {
         ID=in;
     }
-    public Student(Stirng in,int inChoice)
+    public Student(String in,int inChoice)
     {
         ID=in;
         choice=inChoice;
     }
-    public void setID(Stirng in)
+    public void setID(String in)
     {
         ID=in;
     }

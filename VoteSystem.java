@@ -1,4 +1,4 @@
-package iVote;
+
 import java.util.*;
 
 public class VoteSystem
@@ -72,11 +72,11 @@ public class VoteSystem
     */
     public String getStatis()
     {
-        result=Stirng.format("%d students answered the question, %d% of them were correct.\n",studentsID.size(),correctNum/studentsID.size());
+        String result=String.format("%d students answered the question, %d of them were correct.\n",studentsID.size(),correctNum);
         for(int i=0;i<ansMap.size();i++)
         {
             int j=i+1;
-            result+=String.format("%d% of students choose answer %d",ansMap.get(j)/studentsID.size(),j);
+            result+=String.format("%d students choose answer %d\n",ansMap.get(j),j);
         }
         return result;
     }

@@ -1,4 +1,4 @@
-package iVote;
+package VotePackage;
 import java.util.*;
 class Question
 {
@@ -14,9 +14,8 @@ class Question
     public Question(String body)
     {
         questionBody=body;
-        answers=new ArrayList<Stirng>();
+        answers=new ArrayList<String>();
         quesCounter++;
-        correctAns=new ArrayList<Integer>();
     }
 
     public void setQue(String inQue)
@@ -57,7 +56,7 @@ class Question
     public String toStirng()
     {
         String output;
-        output=Stirng.format("Problem %d:\n%s\n%s\n",quesCounter,questionBody,getAnswers());
+        output=String.format("Problem %d:\n%s\n%s\n",quesCounter,questionBody,getAnswers());
         return output;
     }
     public int getAnsNum()

@@ -1,8 +1,13 @@
-package iVote;
-class TFChoice extends Question
+
+public class TFChoice extends Question
 {
     public TFChoice()
     {
+        addAnswers("");
+    }
+    public TFChoice(String in)
+    {
+        super(in);
         addAnswers("");
     }
     //@override
